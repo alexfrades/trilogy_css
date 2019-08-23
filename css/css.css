@@ -316,8 +316,6 @@ span {
     margin: auto;
 }
 
-}
-
 
 
 #faqs #faqs-parent #blue-line {
@@ -326,6 +324,7 @@ span {
     margin: 0px;
     padding: 0px;
     background-color: #38bcdb;
+    display:block;
 }
 
 #faqs #faqs-container #faqs-inner-div {
