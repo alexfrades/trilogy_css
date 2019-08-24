@@ -514,7 +514,23 @@ footer {
         margin-left: unset;
     }
 }
+
+@media screen and (max-width: 480px) {
+    #phone-number {
+        height: 59px;
+    }
+}
+
     @media screen and (max-width: 420px) {
+        #hero-section #get-info {
+        width: 300px;
+    }
+
+    #hero-section #tagline_768 h1 {
+        font-size: 1.9em;
+        line-height: 2.3rem;
+        width: 100%;
+    }
         footer div {
             width: 100%;
             height: auto;
