@@ -1,255 +1,596 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-    <meta charset="utf-8" />
-    <title>Trilogy Dev Test - Alex Frades</title>
-    <meta name="description" content="Trilogy Dev Test - Alex Frades">
-    <meta name="keywords" content="Trilogy Dev Test - Alex Frades">
-    <meta name="author" content="Alejandro Frades">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+html, body {
+    height: 100%;
+    width: 100%;
+    background: white;
+    margin: 0px;
+    padding: 0px;
+    margin: auto;
+}
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+header {
+    width: 100%;
+    height: 100px;
+}
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    header img {
+        width: 203px;
+        margin: 23px 0px 20px 10%;
+    }
 
+main, section {
+    width: 100%;
+    max-width: 1300px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
+div {
+    overflow: hidden;
+}
 
+#hero-section {
+    background: url('../images/img_hero.jpg') top center no-repeat;
+}
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    #hero-section #get-info {
+        width: 385px;
+        height: 290px;
+        background: white;
+        position: absolute;
+        top: 110px;
+        left: 80px;
+    }
 
+        #hero-section #get-info #programs {
+            width: 253px;
+            margin: auto;
+            padding-top: 25px;
+        }
 
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        #hero-section #get-info div h4 {
+              /* float: left;
+         margin: 0px 0px 0px 36%;*/
+            margin: auto;
+            text-align: center;
+            font-size: 15px;
+            font-family: "Open Sans";
+            color: #355779;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
 
-    <link rel="stylesheet" type="text/css" href="css/css.css" />
+        #hero-section #get-info h3 {
+            font-family: 'Open Sans', sans-serif;
+            color: black;
+            font-size: 1.7rem;
+            font-weight: 900;
+            text-align: center;
+            background-color: #38bbdb;
+            height: 45px;
+            width: 100%;
+            margin: 0px;
+            padding-top: 10px;
+            text-transform: uppercase;
+        }
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon" />
+        #hero-section #get-info button {
+            width: 195px;
+            height: 37px;
+            background-color: #181818;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.36rem;
+            letter-spacing: 1px;
+            font-weight: 900;
+            text-align: center;
+            margin: 8px auto;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            border: none;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+            #hero-section #get-info button:hover {
+                background-color: #2e91a3;
+                cursor: pointer;
+            }
 
-    <script type="text/javascript" src="js/js.js"></script>
+        #hero-section #get-info #programs #chevron {
+            float: right;
+            margin-right: 10px;
+            margin-top: -20px;
+        }
 
-    <style>
-    </style>
-</head>
+#hero-section p {
+    height: 6px;
+    width: 295px;
+    background: #dad5d5;
+    border-radius: 6px;
+    margin: auto;
+    margin-top: 78px;
+}
 
-<body>
+#get-info #percentage {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #908d8d;
+    margin: auto;
+    right: 0px;
+    left: 0px;
+    width: fit-content;
+}
 
+#hero-section #tagline {
+    float: right;
+    overflow: hidden;
+    text-align: right;
+    margin: 125px 85px 42px 0px;
+    padding: 0px;
+    width: 425px;
+    display: block;
+}
 
+#hero-section #tagline_768 {
+    display: none;
+    width: fit-content;
+    margin: auto;
+}
 
-    <main>
-        <header>
-            <img src="images/logo.svg" title="Trilogy is a workforce accelerator." alt="Trilogy logo" />
-        </header>
+    #hero-section #tagline_768 h1 {
+        line-height: 3.2rem;
+        text-align: center;
+    }
 
-        <section id="hero-section">
-            <div id="tagline_768">
-                <h2>Coding Bootcamp</h2>
-                <h1>
-                    Become a Web Developer<br />in 24 Weeks
-                </h1>
-            </div>
-            <div id="get-info">
-                <h3>GET PROGRAM INFO</h3>
-                <br />
-                <br />
-                <div id="programs">
-                    <h4>Programs </h4>
-                    <i class="fas fa-chevron-down" id="chevron"></i>
-                </div>
+#hero-section h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
 
-                <br />
+#hero-section h1 {
+    font-family: 'Open Sans Bold', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 3.6rem;
+    line-height: 4.7rem;
+    text-align: right;
+    width: fit-content;
+    float: right;
+    margin-top: -25px;
+    padding: 0px;
+}
 
-                <button class="zoom">NEXT</button>
-                <br />
-                <p></p>
-                <div id="percentage">XX%</div>
-            </div>
-
-            <div id="tagline">
-                <h2>UM Coding Bootcamp</h2>
-                <h1>
-                    Become a<br />Web Developer<br />in 24 Weeks
-                </h1>
-            </div>
-
-
-        </section>
-
-        <div id="phone-number">
-            To speak to an admissions advisor now, call <a href="tel:813.404.7641" style="text-decoration:none; color:black">xxx.xxx.xxxx</a>
-        </div>
-
-        <section id="featuring">
-            <h1>FEATURING</h1>
-
-            <div id="features-container-768">
-                <img src="images/phone.svg" title="Phone app coding." alt="Phone app design and development." id="phones-768" />
-                <br />
-
-                <div>
-                    <img src="images/data_coding.svg" title="Coding and Development." alt="Data coding and web development" />
-                    <p style="padding-top: 8px;">
-                        <span>HTML5, CSS3</span>, Javascript, jQuery,Bootstrap, Express.js, React.js, Node.js, Database Theory, Bookshelf.js, MongoDB, MySQL,Command Line, Git, and more.<sup>&#42;</sup>
-                    </p>
-                </div>
-                <br />
-                <br />
-
-                <div>
-                    <img src="images/complete_proj.svg" title="Coding and Development." alt="Data coding and web development" />
-                    <p>
-                        Benefit from a wide range of career services to position you for sucess through graduation and beyond.
-                    </p>
-                </div>
-                <br />
-                <br />
-
-                <div>
-                    <img src="images/benefit.svg" title="Coding and Development." alt="Data coding and web development" />
-                    <p class="short-line">
-                        Build a portfolio of web applications to showcase your knowledge.
-                    </p>
-                </div>
-                <br />
-                <br />
-
-                <div>
-                    <img src="images/time.svg" title="Coding and Development." alt="Data coding and web development" />
-                    <p class="short-line">
-                        Study part-time while maintaining your work schedule.
-                    </p>
-                </div>
-            </div>
-
-
-
-
-
-            <div id="features-container">
-                <br />
-                <br />
-                <div class="feature">
-                    <img src="images/data_coding.svg" title="Coding and Development." alt="Data coding and web development" />
-                    <p>
-                        <span>HTML5, CSS3</span>, Javascript, jQuery,Bootstrap, Express.js, React.js, Node.js, Database Theory, Bookshelf.js, MongoDB, MySQL,Command Line, Git, and more.<sup>&#42;</sup>
-                    </p>
-
-                    <img src="images/benefit.svg" title="Portfolios." alt="Build a great portfolio." />
-                    <p>
-                        Build a portfolio of web applications to showcase your knowledge.
-                    </p>
-                </div>
-
-                <div class="feature flex">
-                    <img src="images/phone.svg" title="Phone app coding." alt="Phone app design and development." />
-                </div>
-
-                <div class="feature">
-                    <img src="images/complete_proj.svg" title="Coding and Development." alt="Data coding and web development" />
-                    <p class="lft">
-                        Benefit from a wide range of career services to position you for sucess through graduation and beyond.
-                    </p>
-                    <img src="images/time.svg" title="Portfolios." alt="Build a great portfolio." />
-                    <p>
-                        Study part-time while maintaining your work schedule.
-                    </p>
-                </div>
-            </div>
-
-            <h5>*The materials covered in this course are subject change due to market demand.</h5>
-        </section>
-
-        <br />
-        <br />
-
-        <section id="our-story">
-            <h1>OUR STORY</h1>
-            <br />
-
-            <p>
-                Last year, <span style="text-transform: uppercase;">U.S. companies</span> struggled to fill more than 1.3 million job openings in software development.  The market is responding to this demand, but most students turn to standalone code development boot camps for the answer.
-            </p>
-
-        </section>
-
-        <br />
-        <br />
-
-       
-        <section id="faqs">
-            <div id="faqs-parent">
-                <img src="images/img_faq.jpg" title="FAQS" alt="Frequently Asked Questions" id="img_faq" />
-                <h1>FREQUENTLY ASKED QUESTIONS</h1>
-                <br />
-                <div id="blue-line"></div>
-                <br />
+#phone-number {
+    width: 100%;
+    padding-top: 10px;
+    height: 37px;
+    background: #aaaaac;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
 
 
-                <div id="faqs-container">
-                    <img src="images/img_faq_m.jpg" title="FAQS" alt="Frequently Asked Questions" id="img_faq_m" />
+#featuring {
+    width: 100%;
+    background: white;
+    text-align: center;
+}
 
-                    <div id="faqs-inner-div">
-                        <ul id="parent_ul">
-                            <li id="li-one">
-                                <span class="plus-sign">+</span> What are the dates of <span>UM</span> Coding Boot Camp?
-                                <div> &bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                            </li>
-                            <li id="li-two">
-                                <span class="plus-sign">+</span> Can I keep working while studying at <span>UM</span> Coding Boot Camp?
-                                <div> &bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                            </li>
-                            <li id="li-three">
-                                <span class="plus-sign">+</span>How long is the course?
-                                <div> &bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                            </li>
-                            <li id="li-four">
-                                <span class="plus-sign">+</span> Do I need to have previous experience in programming before enrolling?
-                                <div>
-                                    &bull; While some background experience in programming is helpful, no experience is needed as long as you are dedicated and eager to learn.  Our pre-course tutorials will help you prepare for our program.
-                                </div>
-                            </li>
-                            <li id="li-five">
-                                <span class="plus-sign">+</span> What sets your boot camp apart from others I can join in Miami or elsewhere?
-                                <div> &bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                            </li>
-                        </ul>
-                    </div>
+    #featuring h1, h5 {
+        color: black;
+        font-family: 'Open Sans Bold', sans-serif;
+        font-size: 27px;
+        font-weight: 600;
+        text-align: center;
+    }
 
-                </div>
-            </div>
-        </section>
+    #featuring h5 {
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0px;
+        padding: 0px;
+    }
 
-        <br />
-        <br />
-
-        <footer>
-            <div>
-                <img src="images/logo.svg" title="Trilogy is a workforce accelerator." alt="Trilogy logo" />
-            </div>
-
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                </p>
-            </div>
-        </footer>
-    </main>
+    #featuring #features-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
 
 
-</body>
-</html>
+    #featuring #features-container-768 {
+        display: none;
+    }
+
+        #featuring #features-container-768 #phones-768 {
+            width: 100%;
+            max-width: 270px;
+            margin: auto;
+            float: unset;
+        }
+
+        #featuring #features-container-768 img {
+            width: 61px;
+            height: auto;
+            float: left;
+        }
+
+        #featuring #features-container-768 div {
+            width: 85%;
+            margin: auto;
+        }
+
+            #featuring #features-container-768 div p {
+                text-align: left;
+                margin: 0px;
+                margin-left: 80px;
+                padding: 0px;
+                font-size: 15px;
+            }
+
+            #featuring #features-container-768 div .short-line {
+                padding-top: 16px;
+            }
+
+
+    #featuring #features-container .feature {
+        width: 33%;
+        display: inline-block;
+        text-align: center;
+        padding: 20px;
+        padding-top: 5%;
+    }
+
+        #featuring #features-container .feature p, #featuring #features-container-768 p {
+            color: black;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        #featuring #features-container .feature .lft {
+            margin: 30px 0px 33px 0px;
+        }
+
+}
+
+#featuring h1, #our-story p {
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 1.77em;
+    color: black;
+    text-align: center;
+}
+
+#featuring #features-container .feature img {
+    width: 61px;
+    height: auto;
+}
+
+#featuring #features-container .flex {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+    #featuring #features-container .flex img {
+        width: 100%;
+        max-width: 315px;
+    }
+
+span {
+    text-transform: uppercase;
+}
+
+
+#our-story {
+    background: #181818;
+    padding-top: 40px;
+    text-align: center;
+}
+
+    #our-story h1 {
+        font-family: 'Open Sans Bold', sans-serif;
+        font-size: 1.69em;
+        color: #3db8d9;
+        text-align: center;
+        margin: auto;
+    }
+
+    #our-story p {
+        color: white;
+        font-family: 'Open Sans Bold', sans-serif;
+        font-size: 1.5em;
+        width: 75%;
+        max-width: 1000px;
+        margin: auto;
+        text-align: center;
+        line-height: 1.63em;
+        margin-bottom: 45px;
+    }
+
+
+#faqs #faqs-parent {
+    width: 90%;
+    margin: auto;
+}
+
+
+
+    #faqs #faqs-parent #blue-line {
+        width: 96px;
+        height: 6px;
+        margin: 0px;
+        padding: 0px;
+        background-color: #38bcdb;
+        display: block;
+    }
+
+#faqs #faqs-container #faqs-inner-div {
+    padding: 0px;
+}
+
+#faqs #faqs-parent #img_faq {
+    float: right;
+    margin: 0px;
+    display: block;
+}
+
+
+#faqs #faqs-container #img_faq_m {
+    display: none;
+    float: unset;
+    width: 100%;
+}
+
+#faqs #faqs-container #faqs-inner-div #parent_ul {
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+    #faqs #faqs-container #faqs-inner-div #parent_ul li {
+        color: black;
+        font-family: 'Open Sans Bold', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+        #faqs #faqs-container #faqs-inner-div #parent_ul li:hover {
+            cursor: pointer;
+        }
+
+        #faqs #faqs-container #faqs-inner-div #parent_ul li .plus-sign {
+            font-size: 17px;
+            font-weight: 800;
+        }
+
+
+/*#faqs #faqs-container #faqs-inner-div #parent_ul li:before {
+                        content: '';
+                        display: inline-block;
+                        height: 10px;
+                        width: 10px;
+                        background-size: 10px;
+                        background-image: url("images/plus.png");
+                        background-repeat: no-repeat;
+                        margin-right: 5px;
+                    }*/
+
+/*#faqs #faqs-container #faqs-inner-div #parent_ul li .sub-ul li:before {
+                        list-style-type: none;
+                        background-image: unset;
+                    }*/
+
+/*#faqs #faqs-container #faqs-inner-div #parent_ul li .sub-ul li {
+                        display: none;
+                        list-style-type: initial;
+                        text-indent: unset;
+                    }*/
+
+
+#faqs #faqs-container #parent_ul li div {
+    display: none;
+    padding-left: 25px;
+    margin-top: 8px;
+}
+
+#faqs #faqs-parent h1 {
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 1.81em;
+}
+
+footer {
+    background-color: rgb(57, 187, 219, .5);
+}
+
+    footer div img {
+        width: 100%;
+        max-width: 285px;
+        margin-top: 7%;
+        margin-left: 5%;
+    }
+
+    footer div {
+        width: 48%;
+        display: inline-block;
+        height: 190px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+    }
+
+        footer div:first-child {
+            margin-top: 30px;
+        }
+
+        footer div p {
+            width: 100%;
+            max-width: 360px;
+            text-align: right;
+            float: right;
+        }
+
+
+/*  media queries  */
+
+@media screen and (max-width: 992px) {
+    #hero-section #tagline {
+        margin-right: 40px;
+        width: unset;
+    }
+
+    #hero-section h1 {
+        font-size: 2.7em;
+        line-height: 3.58rem;
+    }
+
+    #hero-section #get-info {
+        left: 20px;
+    }
+
+    #faqs #faqs-parent h1 {
+        font-size: 1.5em;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #hero-section {
+        background: url('../images/img_hero_m.jpg') top center no-repeat;
+        padding-top: 25px;
+    }
+
+        #hero-section #get-info {
+            position: relative;
+            display: block;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            margin: auto;
+            margin-bottom: 45px;
+        }
+
+        #hero-section #tagline {
+            display: none;
+        }
+
+        #hero-section #tagline_768 {
+            display: block;
+        }
+
+        #hero-section h2 {
+            text-align: center;
+        }
+
+    #featuring #features-container {
+        display: none;
+    }
+
+    #featuring #features-container-768 {
+        display: block;
+    }
+
+    #featuring h5 {
+        margin-top: 33px;
+    }
+
+    /*#faqs #faqs-container #parent_ul li { margin-left: -40px; }*/
+    #faqs #faqs-parent #img_faq {
+        display: none;
+    }
+
+    #faqs #faqs-parent #img_faq_m {
+        display: block;
+    }
+
+    footer div:first-child {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    footer div:first-child img {
+        margin-top: 17%;
+        margin-left: unset;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #phone-number {
+        height: 59px;
+    }
+
+#hero-section #get-info {
+        width: 320px;
+        height: 245px;
+    }
+
+    #hero-section #get-info h3 {
+        font-size: 1.2rem;
+        height: 35px;
+    }
+   
+        #hero-section #tagline_768 h1 {
+            font-size: 1.9em;
+            line-height: 2.3rem;
+            width: 100%;
+        }
+
+#hero-section #get-info #programs {
+        padding-top: 5px;
+    }
+
+    #hero-section #get-info #programs h4 {
+        font-size: 14px;
+        margin: auto;
+        float:unset;
+    }
+
+    
+
+        #hero-section #get-info button {
+            width: 185px;
+            font-size: 1.2rem;
+        }
+
+    #hero-section p {
+        width: 244px;
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    footer div {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 0px;
+    }
+
+        footer div:first-child {
+            text-align: center;
+        }
+
+            footer div:first-child img {
+                margin: 20px;
+            }
+
+        footer div p {
+            width: 92%;
+            text-align: center;
+            margin: 20px auto;
+            float: unset;
+        }
+}
+}
