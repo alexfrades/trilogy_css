@@ -5,11 +5,16 @@ $(document).ready(function () {
 
         $("#" + this.id + " div").fadeToggle();
 
-        /*
-        $("#" + this.id + " .plus-sign").hide(function () {
-            $("#" + this.id + " .minus-sign").toggle();
-        });
-        */
+        var s = $("#" + this.id + " span:first-child").text();
+
+        var span = (s == "+") ? "-" : "+";
+
+
+        if (span == "+") {
+            $("#" + this.id + " span:first-child").html("+");
+        } else {
+            $("#" + this.id + " span:first-child").html("<span style='color:#38bcdb'>&ndash;</span>");
+        }
 
     })
 })
