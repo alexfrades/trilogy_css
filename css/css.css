@@ -521,8 +521,8 @@ footer {
     }
 }
 
-    @media screen and (max-width: 420px) {
-        #hero-section #get-info {
+@media screen and (max-width: 420px) {
+    #hero-section #get-info {
         width: 300px;
     }
 
@@ -551,6 +551,5 @@ footer {
                 margin: 20px auto;
                 float: unset;
             }
-
     }
 }
