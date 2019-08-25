@@ -543,8 +543,9 @@ footer {
 
 @media screen and (max-width: 480px) {
     #phone-number {
-        height: 35px;
+        height: 26px;
         font-size: 15px;
+        padding: 8px 0px 8px 0px;
     }
 
     #hero-section h2 {
@@ -596,6 +597,11 @@ footer {
 
 @media screen and (max-width: 420px) {
 
+    #phone-number {        
+        font-size: 15px;
+    }
+
+   
     footer div {
         width: 100%;
         height: auto;
@@ -619,7 +625,11 @@ footer {
         }
 }
 
-
+@media screen and (max-width: 396px) {
+    #phone-number {
+        height: 40px;
+    }
+}
 
 @media screen and (max-width: 350px) {
     #hero-section {
@@ -655,10 +665,8 @@ footer {
     }
 
     #phone-number {
-        height: 38px;
-        font-size: 15px;
-        padding: 3px;
+        height: 35px;
     }
-   
+
 }
 
