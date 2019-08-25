@@ -49,15 +49,12 @@ div {
         }
 
         #hero-section #get-info div h4 {
-            /* float: left;
-         margin: 0px 0px 0px 36%;*/
             margin: auto;
             text-align: center;
             font-size: 15px;
             font-family: "Open Sans";
             color: #355779;
-            letter-spacing: 1px;
-            text-transform: uppercase;
+            letter-spacing: 1px;            
         }
 
         #hero-section #get-info h3 {
@@ -548,23 +545,27 @@ footer {
         padding: 8px 0px 8px 0px;
     }
 
+    #hero-section #tagline_768 h1 {
+        margin-top: -18px;
+    }
+
     #hero-section h2 {
         font-size: 1.05rem;
         margin-bottom: 25px;
-
     }
-    #hero-section #get-info {
-        width: 320px;
-        height: 245px;
-    }
+   
 
         #hero-section #get-info h3 {
             font-size: 1.2rem;
             height: 35px;
         }
 
+    #hero-section #tagline_768 {
+        margin-top: 20px;
+    }
+
     #hero-section #tagline_768 h1 {
-        font-size: 1.9em;
+        font-size: 2.05em;
         line-height: 2.3rem;
         width: 100%;
     }
@@ -585,9 +586,42 @@ footer {
         font-size: 1.2rem;
     }
 
+
+
+    #hero-section #get-info {
+        width: 305px;
+        height: 216px;
+        margin-top: 0px;
+    }
+
+    #get-info #percentage {
+        font-size: 12px;
+    }
+
+
+    #hero-section #get-info h3 {
+        font-family: 'Open Sans Bold', sans-serif;
+        font-size: 19px;
+        height: 30px;
+        font-weight: 600;
+    }
+
+    #hero-section #get-info button {
+        width: 145px;
+        font-size: 16px;
+        height: 26px;
+    }
+
+    
+    #hero-section #get-info #programs h4 {
+        font-size: 11px;
+        letter-spacing: 0px;
+    }
+
     #hero-section p {
         width: 244px;
-        margin-top: 70px;
+        margin-top: 50px;
+        height: 5px;
     }
 
        #featuring h1 {
@@ -634,22 +668,27 @@ footer {
 @media screen and (max-width: 350px) {
     #hero-section {
         background: url(../images/img_hero_m.jpg) 41% center no-repeat;
-        height: 417px;
+        height: 412px;
     }
-
-        #hero-section #get-info {
-            height: 216px;
-            margin-top: 33px;
-        }
+           
         
         #hero-section p {
             height: 5px;
             margin-top: 47px;
         }
+
+        #hero-section #tagline_768 h1 {
+            font-size: 2em;
+            line-height: 2.23rem;
+            width: 100%;
+        }
+               
         
     #get-info #percentage {
         font-size: 12px;
     }
+
+
 
     #hero-section #get-info h3 {
         font-family: 'Open Sans Bold', sans-serif;
@@ -665,8 +704,13 @@ footer {
     }
 
     #phone-number {
-        height: 35px;
+        height: 43px;
     }
+}
 
+@media screen and (max-width: 324px) {
+    #hero-section #get-info {
+        width: 100%;
+    }
 }
 
