@@ -117,7 +117,8 @@ div {
     margin: auto;
     right: 0px;
     left: 0px;
-    width: fit-content;
+    width: auto;
+    text-align: center;
 }
 
 #hero-section #tagline {
@@ -165,9 +166,10 @@ div {
     line-height: 4.7rem;
     text-align: right;
     width: fit-content;
-    float: right;
+    /*float: right;*/
     margin-top: -25px;
     padding: 0px;
+    text-align:center;
 }
 
 #phone-number {
