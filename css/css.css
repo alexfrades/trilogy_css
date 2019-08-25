@@ -340,6 +340,7 @@ span {
 
 #faqs #faqs-container #faqs-inner-div {
     padding: 0px;
+    padding-right: 20px;
 }
 
 #faqs #faqs-parent #img_faq {
