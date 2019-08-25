@@ -49,7 +49,7 @@ div {
         }
 
         #hero-section #get-info div h4 {
-              /* float: left;
+            /* float: left;
          margin: 0px 0px 0px 36%;*/
             margin: auto;
             text-align: center;
@@ -104,14 +104,14 @@ div {
             margin-top: -20px;
         }
 
-#hero-section p {
-    height: 6px;
-    width: 295px;
-    background: #dad5d5;
-    border-radius: 6px;
-    margin: auto;
-    margin-top: 78px;
-}
+    #hero-section p {
+        height: 6px;
+        width: 295px;
+        background: #dad5d5;
+        border-radius: 6px;
+        margin: auto;
+        margin-top: 78px;
+    }
 
 #get-info #percentage {
     font-family: 'Open Sans', sans-serif;
@@ -134,18 +134,18 @@ div {
 }
 
     #hero-section #tagline h2:first-child {
-        display:none;
+        display: none;
     }
 
     #hero-section #tagline h2 + h2 {
-        display:block;
+        display: block;
     }
 
-    #hero-section #tagline_768 {
-        display: none;
-        width: fit-content;
-        margin: auto;
-    }
+#hero-section #tagline_768 {
+    display: none;
+    width: fit-content;
+    margin: auto;
+}
 
     #hero-section #tagline_768 h1 {
         line-height: 3.2rem;
@@ -157,7 +157,7 @@ div {
     color: white;
     font-size: 1.5rem;
     font-weight: 400;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 #hero-section h1 {
@@ -467,8 +467,8 @@ footer {
 
     #hero-section #tagline h2 + h2 {
         display: none;
-
     }
+
     #hero-section #get-info {
         left: 20px;
     }
@@ -543,45 +543,54 @@ footer {
 
 @media screen and (max-width: 480px) {
     #phone-number {
-        height: 59px;
+        height: 35px;
+        font-size: 15px;
     }
 
-#hero-section #get-info {
+    #hero-section h2 {
+        font-size: 1.05rem;
+        margin-bottom: 25px;
+
+    }
+    #hero-section #get-info {
         width: 320px;
         height: 245px;
     }
 
-    #hero-section #get-info h3 {
-        font-size: 1.2rem;
-        height: 35px;
-    }
-   
-        #hero-section #tagline_768 h1 {
-            font-size: 1.9em;
-            line-height: 2.3rem;
-            width: 100%;
+        #hero-section #get-info h3 {
+            font-size: 1.2rem;
+            height: 35px;
         }
 
-#hero-section #get-info #programs {
+    #hero-section #tagline_768 h1 {
+        font-size: 1.9em;
+        line-height: 2.3rem;
+        width: 100%;
+    }
+
+    #hero-section #get-info #programs {
         padding-top: 5px;
     }
 
-    #hero-section #get-info #programs h4 {
-        font-size: 14px;
-        margin: auto;
-        float:unset;
-    }
-
-    
-
-        #hero-section #get-info button {
-            width: 185px;
-            font-size: 1.2rem;
+        #hero-section #get-info #programs h4 {
+            font-size: 14px;
+            margin: auto;
+            float: unset;
         }
+        
+
+    #hero-section #get-info button {
+        width: 185px;
+        font-size: 1.2rem;
+    }
 
     #hero-section p {
         width: 244px;
         margin-top: 70px;
+    }
+
+       #featuring h1 {
+        font-size: 20px;
     }
 }
 
@@ -609,4 +618,47 @@ footer {
             float: unset;
         }
 }
+
+
+
+@media screen and (max-width: 350px) {
+    #hero-section {
+        background: url(../images/img_hero_m.jpg) 41% center no-repeat;
+        height: 417px;
+    }
+
+        #hero-section #get-info {
+            height: 216px;
+            margin-top: 33px;
+        }
+        
+        #hero-section p {
+            height: 5px;
+            margin-top: 47px;
+        }
+        
+    #get-info #percentage {
+        font-size: 12px;
+    }
+
+    #hero-section #get-info h3 {
+        font-family: 'Open Sans Bold', sans-serif;
+        font-size: 19px;
+        height: 30px;
+        font-weight: 600;
+    }
+
+    #hero-section #get-info button {
+        width: 145px;
+        font-size: 16px;
+        height: 26px;
+    }
+
+    #phone-number {
+        height: 38px;
+        font-size: 15px;
+        padding: 3px;
+    }
+   
 }
+
