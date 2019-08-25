@@ -331,7 +331,7 @@ span {
 
     #faqs #faqs-parent #blue-line {
         width: 96px;
-        height: 6px;
+        height: 5px;
         margin: 0px;
         padding: 0px;
         background-color: #38bcdb;
@@ -413,6 +413,7 @@ span {
     color: black;
     font-family: 'Open Sans Bold', sans-serif;
     font-size: 1.81em;
+    margin-bottom: 0px;
 }
 
 footer {
@@ -712,6 +713,10 @@ footer {
 @media screen and (max-width: 324px) {
     #hero-section #get-info {
         width: 100%;
+    }
+
+    #faqs #faqs-parent {
+        margin: -15px auto;
     }
 }
 
