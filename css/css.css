@@ -380,8 +380,11 @@ span {
             font-weight: 800;
         }
 
+        ul li .plus-sign:hover {
+            cursor: pointer
+        }
 
-/*#faqs #faqs-container #faqs-inner-div #parent_ul li:before {
+/*#faqs-inner-div #parent_ul li:before {
                         content: '';
                         display: inline-block;
                         height: 10px;
@@ -392,12 +395,12 @@ span {
                         margin-right: 5px;
                     }*/
 
-/*#faqs #faqs-container #faqs-inner-div #parent_ul li .sub-ul li:before {
+/*#faqs-inner-div #parent_ul li .sub-ul li:before {
                         list-style-type: none;
                         background-image: unset;
                     }*/
 
-/*#faqs #faqs-container #faqs-inner-div #parent_ul li .sub-ul li {
+/*#faqs-inner-div #parent_ul li .sub-ul li {
                         display: none;
                         list-style-type: initial;
                         text-indent: unset;
