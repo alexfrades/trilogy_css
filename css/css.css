@@ -667,6 +667,11 @@ footer {
     #phone-number {
         height: 40px;
     }
+
+    #our-story p {
+        font-size: 1.2em;
+        line-height: 1.44em;
+    }
 }
 
 @media screen and (max-width: 350px) {
