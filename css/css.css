@@ -148,6 +148,7 @@ div {
     #hero-section #tagline_768 h1 {
         line-height: 3.2rem;
         text-align: center;
+        float:unset;
     }
 
 #hero-section h2 {
